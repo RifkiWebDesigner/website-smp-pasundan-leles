@@ -6,6 +6,15 @@
 /*==================================================
                 GOOGLE FONT
 ==================================================*/
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+*{
+    box-sizing:border-box;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
@@ -3757,47 +3766,26 @@ footer{
 =========================================*/
 
 .footer-logo{
-
-    display:flex;
-
-    align-items:center;
-
+    flex-direction:column;
+    text-align:center;
     gap:15px;
-
-    margin-bottom:20px;
-
 }
 
 .footer-logo img{
-
-    width:65px;
-
+    width:100px;
+    height:100px;
 }
-
 .footer-logo h2{
-
     font-size:26px;
-
-    color:#fff;
-
 }
 
 .footer-logo span{
-
-    color:#CBD5E1;
-
     font-size:14px;
-
 }
 
 .footer-about p{
-
-    color:#CBD5E1;
-
-    line-height:1.8;
-
-    text-align:justify;
-
+    text-align:center;
+    margin-top:15px;
 }
 
 
@@ -4476,131 +4464,209 @@ footer{
                 MOBILE
 =========================================*/
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-section{
+    section{
+        padding:70px 0;
+    }
 
-    padding:70px 0;
+    .container,
+    .contact-container,
+    .ppdb-container{
+        width:100%;
+        max-width:100%;
+        padding-left:20px;
+        padding-right:20px;
+    }
 
-}
+    /* ================= MENU ================= */
 
-.hero{
+    .mobile-menu{
+        height:100vh;
+        overflow-y:auto;
+        -webkit-overflow-scrolling:touch;
+    }
 
-    padding-top:140px;
+    .mobile-menu ul{
+        padding-bottom:40px;
+    }
 
-}
+    /* ================= HERO ================= */
 
-.page-banner{
+    .hero{
+        padding-top:140px;
+    }
 
-    padding-top:140px;
+    .page-banner{
+        padding-top:140px;
+    }
 
-}
+    .hero-content h1{
+        font-size:38px;
+    }
 
-.hero-content h1{
+    .page-banner-content h1{
+        font-size:40px;
+    }
 
-    font-size:38px;
+    .section-header h2{
+        font-size:32px;
+    }
 
-}
+    .section-header p{
+        width:100%;
+    }
 
-.page-banner-content h1{
+    .about-content h2,
+    .principal-content h2,
+    .history-content h2,
+    .facility-description h2{
+        font-size:32px;
+    }
 
-    font-size:40px;
+    /* ================= GRID ================= */
 
-}
+    .teacher-grid,
+    .extra-wrapper,
+    .facility-wrapper,
+    .gallery-grid,
+    .statistics-wrapper,
+    .gallery-stat-wrapper,
+    .vision-wrapper,
+    .flow-wrapper,
+    .contact-wrapper,
+    .requirement-wrapper{
+        grid-template-columns:1fr;
+    }
 
-.section-header h2{
+    .contact-wrapper,
+    .requirement-wrapper{
+        gap:30px;
+    }
 
-    font-size:32px;
+    .principal-card{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
 
-}
+    /* ================= PPDB ================= */
 
-.section-header p{
+    .ppdb-info{
+        grid-template-columns:1fr;
+    }
 
-    width:100%;
+    .ppdb-hero{
+        padding:50px 25px;
+    }
 
-}
+    .ppdb-hero h2{
+        font-size:34px;
+    }
 
-.about-content h2,
+    .ppdb-cta{
+        padding:40px 25px;
+    }
 
-.principal-content h2,
+    .ppdb-cta h2{
+        font-size:30px;
+    }
 
-.history-content h2,
+    /* ================= CONTACT ================= */
 
-.facility-description h2{
+    .contact-form{
+        padding:25px;
+    }
 
-    font-size:32px;
+    .contact-map iframe{
+        width:100%;
+        height:300px;
+        display:block;
+    }
 
-}
+    /* ================= FOOTER ================= */
 
-.teacher-grid,
-
-.extra-wrapper,
-
-.facility-wrapper,
-
-.gallery-grid,
-
-.statistics-wrapper,
-
-.gallery-stat-wrapper{
-
-    grid-template-columns:1fr;
-
-}
-
-.vision-wrapper{
-
-    grid-template-columns:1fr;
-
-}
-
-.principal-card{
-
-    grid-template-columns:1fr;
-
-    text-align:center;
-
-}
+    /* ================= FOOTER ================= */
 
 .footer-wrapper{
-
     grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+}
 
+.footer-logo{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+}
+
+.footer-logo img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.footer-logo h2{
+    font-size:24px;
+    line-height:1.3;
+    margin-bottom:5px;
+}
+
+.footer-logo span{
+    font-size:13px;
+}
+
+.footer-about p{
+    margin-top:15px;
+    text-align:center;
+    font-size:15px;
+    line-height:1.8;
+}
+
+.footer-links{
+    align-items:center;
+}
+
+.footer-contact{
+    align-items:center;
+}
+
+.footer-contact li{
+    justify-content:center;
+    text-align:center;
+}
+
+.footer-social{
+    justify-content:center;
 }
 
 .footer-bottom{
-
+    display:flex;
     flex-direction:column;
-
+    align-items:center;
+    justify-content:center;
+    gap:10px;
     text-align:center;
-    justify-content: center;
-
 }
 
-.flow-wrapper{
+    /* ================= TABLE ================= */
 
-    grid-template-columns:1fr;
+    .training-table,
+    .schedule-table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
 
+    /* ================= IMAGE ================= */
+
+    img,
+    iframe{
+        max-width:100%;
+        height:auto;
+    }
 }
-
-.training-table{
-
-    display:block;
-
-    overflow-x:auto;
-
-}
-
-.schedule-table{
-
-    display:block;
-
-    overflow-x:auto;
-
-}
-
-}
-
 
 
 /*=========================================
