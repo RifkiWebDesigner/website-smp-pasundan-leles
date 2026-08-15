@@ -6337,3 +6337,81 @@ body{
     }
 
 }
+
+/* ==================================================
+   FOOTER - LOGO & COPYRIGHT
+================================================== */
+
+.footer-col img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px 20px 28px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-bottom p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-bottom .copyright {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.footer-bottom .developer-info {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .footer-bottom {
+        padding: 20px 15px 24px;
+    }
+
+    .footer-bottom .copyright {
+        font-size: 12px;
+    }
+
+    .footer-bottom .developer-info {
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+}
