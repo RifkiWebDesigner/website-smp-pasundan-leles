@@ -5117,3 +5117,1223 @@ footer{
     gap:8px;
 
 }
+
+/* ==================================================
+   FINAL RESPONSIVE FIX
+   SMP PASUNDAN LELES
+   ================================================== */
+
+/* ================================
+   MOBILE HEADER
+   ================================ */
+
+@media (max-width: 768px){
+
+    .navbar{
+        width:100%;
+        height:70px;
+        padding:0 20px;
+    }
+
+    .logo{
+        gap:10px;
+        min-width:0;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+        flex-shrink:0;
+    }
+
+    .logo-text{
+        min-width:0;
+    }
+
+    .logo-text h2{
+        font-size:17px;
+        line-height:1.2;
+        white-space:nowrap;
+    }
+
+    .logo-text span{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:42px;
+        height:42px;
+        flex-shrink:0;
+        font-size:24px;
+    }
+
+    .nav-menu{
+        top:70px;
+        height:calc(100vh - 70px);
+        width:85%;
+        max-width:300px;
+    }
+
+}
+
+
+/* ================================
+   CONTACT MOBILE
+   ================================ */
+
+@media (max-width: 768px){
+
+    .contact-card{
+        display:grid;
+        grid-template-columns:55px minmax(0, 1fr);
+        column-gap:15px;
+        row-gap:5px;
+        width:100%;
+        padding:20px;
+        min-width:0;
+    }
+
+    .contact-card i{
+        width:55px;
+        height:55px;
+        font-size:22px;
+        grid-column:1;
+        grid-row:1 / span 2;
+    }
+
+    .contact-card h3{
+        grid-column:2;
+        min-width:0;
+        font-size:19px;
+        margin:0;
+    }
+
+    .contact-card p{
+        grid-column:2;
+        min-width:0;
+        margin:0;
+        font-size:14px;
+        line-height:1.7;
+
+        /* Mencegah alamat/email keluar layar */
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+}
+
+
+/* ================================
+   CONTACT SECTION
+   ================================ */
+
+@media (max-width: 576px){
+
+    .contact-card{
+        padding:18px;
+        column-gap:12px;
+    }
+
+    .contact-card i{
+        width:48px;
+        height:48px;
+        font-size:20px;
+    }
+
+    .contact-card h3{
+        font-size:18px;
+    }
+
+    .contact-card p{
+        font-size:13px;
+    }
+
+}
+
+
+/* ================================
+   FACILITY MOBILE
+   ================================ */
+
+@media (max-width: 768px){
+
+    .facility-detail{
+        padding:60px 0;
+    }
+
+    .facility-detail-wrapper{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .facility-detail-wrapper.reverse{
+        direction:ltr;
+    }
+
+    .facility-detail-wrapper > *{
+        width:100%;
+        min-width:0;
+    }
+
+    .facility-description{
+        width:100%;
+    }
+
+    .facility-description span{
+        width:50px;
+        height:50px;
+        font-size:18px;
+        margin-bottom:15px;
+    }
+
+    .facility-description h2{
+        font-size:28px;
+        line-height:1.3;
+        margin-bottom:18px;
+    }
+
+    .facility-description p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .facility-image{
+        width:100%;
+        border-radius:16px;
+    }
+
+    .facility-image img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+   ================================ */
+
+@media (max-width: 400px){
+
+    .navbar{
+        padding:0 15px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    .logo-text h2{
+        font-size:15px;
+    }
+
+    .menu-toggle{
+        width:38px;
+        height:38px;
+        font-size:22px;
+    }
+
+    .container{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .facility-description h2{
+        font-size:25px;
+    }
+
+}
+
+/* ==================================================
+   CONTACT - MOBILE RESPONSIVE FIX
+   ================================================== */
+
+/* Kontainer informasi kontak */
+.contact-info{
+    width:100%;
+    min-width:0;
+}
+
+/* Card kontak */
+.contact-card{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+
+    display:flex;
+    align-items:flex-start;
+
+    gap:18px;
+    padding:25px;
+
+    box-sizing:border-box;
+}
+
+/* Ikon kontak */
+.contact-card i{
+    width:58px;
+    height:58px;
+
+    min-width:58px;
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:24px;
+}
+
+/* Area teks */
+.contact-card > div{
+    flex:1;
+    min-width:0;
+    max-width:100%;
+}
+
+/* Judul */
+.contact-card h3{
+    margin:0 0 8px;
+    font-size:20px;
+    line-height:1.4;
+}
+
+/* Isi kontak */
+.contact-card p{
+    margin:0;
+
+    max-width:100%;
+
+    font-size:15px;
+    line-height:1.7;
+
+    color:var(--gray);
+
+    /* Sangat penting untuk alamat/email */
+    overflow-wrap:anywhere;
+    word-break:break-word;
+}
+
+
+/* ==================================================
+   CONTACT MOBILE
+   ================================================== */
+
+@media(max-width:768px){
+
+    .contact-info{
+        width:100%;
+        min-width:0;
+    }
+
+    .contact-card{
+        display:flex;
+
+        width:100%;
+        max-width:100%;
+
+        padding:20px;
+
+        gap:14px;
+
+        box-sizing:border-box;
+    }
+
+    .contact-card i{
+        width:50px;
+        height:50px;
+
+        min-width:50px;
+
+        font-size:21px;
+    }
+
+    .contact-card > div{
+        min-width:0;
+        flex:1;
+    }
+
+    .contact-card h3{
+        font-size:18px;
+        margin-bottom:6px;
+    }
+
+    .contact-card p{
+        font-size:14px;
+        line-height:1.7;
+
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+   ================================================== */
+
+@media(max-width:576px){
+
+    .contact-card{
+        padding:18px;
+        gap:12px;
+    }
+
+    .contact-card i{
+        width:46px;
+        height:46px;
+        min-width:46px;
+
+        font-size:19px;
+    }
+
+    .contact-card h3{
+        font-size:17px;
+    }
+
+    .contact-card p{
+        font-size:13px;
+        line-height:1.65;
+    }
+
+}
+
+
+/* ==================================================
+   EXTRA SMALL MOBILE
+   ================================================== */
+
+@media(max-width:400px){
+
+    .contact-card{
+        padding:16px;
+        gap:10px;
+    }
+
+    .contact-card i{
+        width:42px;
+        height:42px;
+        min-width:42px;
+
+        font-size:17px;
+    }
+
+    .contact-card h3{
+        font-size:16px;
+    }
+
+    .contact-card p{
+        font-size:12.5px;
+    }
+
+}
+
+/* ==================================================
+   PREVENT HORIZONTAL OVERFLOW
+   ================================================== */
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+.container,
+.contact-container,
+.contact-wrapper,
+.contact-info,
+.contact-card{
+    max-width:100%;
+}
+
+/* ==================================================
+   DETAIL EKSTRAKURIKULER - REVISI
+   ================================================== */
+
+.extra-detail {
+    padding: 90px 0;
+}
+
+.extra-detail.gray {
+    background: #f7f9fc;
+}
+
+/* Layout foto + teks */
+.extra-detail .extra-wrapper {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Urutan terbalik untuk section PMR */
+.extra-detail .extra-wrapper.reverse {
+    grid-template-columns: 55% 45%;
+}
+
+/* Foto */
+.extra-detail .extra-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.extra-detail .extra-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Konten */
+.extra-detail .extra-content {
+    padding: 0;
+}
+
+.extra-detail .extra-content > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    background: var(--primary);
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 22px;
+}
+
+.extra-detail .extra-content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--dark);
+
+    margin: 0 0 20px;
+}
+
+.extra-detail .extra-content p {
+    color: var(--gray);
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    text-align: left;
+
+    margin: 0 0 25px;
+}
+
+/* List fasilitas/kegiatan */
+.extra-detail .extra-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.extra-detail .extra-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--dark);
+
+    font-size: 16px;
+}
+
+.extra-detail .extra-content ul li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    background: #e8f7ef;
+    color: #15945d;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+}
+
+/* Hover foto */
+.extra-detail .extra-image img {
+    transition: transform .5s ease;
+}
+
+.extra-detail .extra-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ==================================================
+   TABLET
+   ================================================== */
+
+@media (max-width: 992px) {
+
+    .extra-detail .extra-wrapper,
+    .extra-detail .extra-wrapper.reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .extra-detail .extra-image {
+        order: -1;
+    }
+
+    .extra-detail .extra-image img {
+        height: 380px;
+    }
+
+    .extra-detail .extra-content h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    .extra-detail {
+        padding: 60px 0;
+    }
+
+    .extra-detail .extra-wrapper,
+    .extra-detail .extra-wrapper.reverse {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .extra-detail .extra-image {
+        width: 100%;
+        order: -1;
+    }
+
+    .extra-detail .extra-image img {
+        width: 100%;
+        height: 240px;
+        border-radius: 16px;
+    }
+
+    .extra-detail .extra-content {
+        width: 100%;
+    }
+
+    .extra-detail .extra-content > span {
+        width: 50px;
+        height: 50px;
+
+        font-size: 17px;
+
+        margin-bottom: 16px;
+    }
+
+    .extra-detail .extra-content h2 {
+        font-size: 30px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .extra-detail .extra-content p {
+        font-size: 15px;
+        line-height: 1.8;
+
+        text-align: left;
+
+        margin-bottom: 22px;
+    }
+
+    .extra-detail .extra-content ul {
+        gap: 10px;
+    }
+
+    .extra-detail .extra-content ul li {
+        font-size: 14px;
+        line-height: 1.5;
+        align-items: flex-start;
+    }
+
+    .extra-detail .extra-content ul li i {
+        width: 27px;
+        height: 27px;
+
+        flex-shrink: 0;
+        margin-top: 1px;
+    }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    .extra-detail {
+        padding: 50px 0;
+    }
+
+    .extra-detail .extra-image img {
+        height: 210px;
+    }
+
+    .extra-detail .extra-content h2 {
+        font-size: 27px;
+    }
+
+    .extra-detail .extra-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .extra-detail .extra-content ul li {
+        font-size: 13px;
+    }
+}
+
+/* ==================================================
+   TIMELINE - PROFIL SEKOLAH
+================================================== */
+
+.timeline {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.timeline .section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.timeline .section-header span {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.timeline .section-header h2 {
+    font-size: 38px;
+    color: var(--dark);
+    margin: 0;
+}
+
+
+/* WRAPPER */
+
+.timeline-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* GARIS TENGAH */
+
+.timeline-wrapper::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 3px;
+
+    background: #dbe7f5;
+
+    transform: translateX(-50%);
+}
+
+
+/* ITEM */
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* TAHUN */
+
+.timeline-year {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--primary);
+    color: #fff;
+
+    border: 7px solid #f8fafc;
+    border-radius: 50%;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    z-index: 2;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* CARD */
+
+.timeline-content {
+    width: calc(50% - 75px);
+
+    background: #fff;
+
+    padding: 28px 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ITEM GANJIL */
+
+.timeline-item:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+
+/* ITEM GENAP */
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-end;
+}
+
+
+/* JUDUL */
+
+.timeline-content h3 {
+    font-size: 21px;
+    color: var(--dark);
+
+    margin: 0 0 10px;
+}
+
+
+/* PARAGRAF */
+
+.timeline-content p {
+    color: var(--gray);
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+
+/* ==================================================
+   TABLET & MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .timeline {
+        padding: 60px 0;
+    }
+
+    .timeline .section-header {
+        margin-bottom: 50px;
+    }
+
+    .timeline .section-header h2 {
+        font-size: 30px;
+    }
+
+
+    /* Garis pindah ke kiri */
+
+    .timeline-wrapper::before {
+        left: 35px;
+        transform: none;
+    }
+
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        display: block;
+
+        padding-left: 90px;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* Tahun */
+
+    .timeline-year {
+        left: 35px;
+
+        width: 70px;
+        height: 70px;
+
+        transform: translateX(-50%);
+
+        border-width: 5px;
+
+        font-size: 13px;
+    }
+
+
+    /* Card */
+
+    .timeline-content {
+        width: 100%;
+
+        padding: 22px;
+
+        border-radius: 14px;
+    }
+
+
+    .timeline-content h3 {
+        font-size: 19px;
+    }
+
+
+    .timeline-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+/* ==================================================
+   HP KECIL
+================================================== */
+
+@media (max-width: 480px) {
+
+    .timeline {
+        padding: 50px 0;
+    }
+
+    .timeline .section-header h2 {
+        font-size: 27px;
+    }
+
+    .timeline-wrapper::before {
+        left: 29px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 72px;
+    }
+
+    .timeline-year {
+        left: 29px;
+
+        width: 58px;
+        height: 58px;
+
+        font-size: 11px;
+    }
+
+    .timeline-content {
+        padding: 18px;
+    }
+
+    .timeline-content h3 {
+        font-size: 17px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE CARD - BERITA & INFORMASI
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* Container agar tidak melebar keluar layar */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Semua grid kartu menjadi 1 kolom */
+    .news-grid,
+    .berita-grid,
+    .popular-grid,
+    .article-grid,
+    .info-grid,
+    .cards-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        width: 100%;
+    }
+
+    /* Kartu */
+    .news-card,
+    .berita-card,
+    .popular-card,
+    .article-card,
+    .info-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* Gambar kartu */
+    .news-card img,
+    .berita-card img,
+    .popular-card img,
+    .article-card img,
+    .info-card img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Judul */
+    .news-card h3,
+    .berita-card h3,
+    .popular-card h3,
+    .article-card h3,
+    .info-card h3 {
+        font-size: 20px;
+        line-height: 1.4;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    /* Isi */
+    .news-card p,
+    .berita-card p,
+    .popular-card p,
+    .article-card p,
+    .info-card p {
+        font-size: 15px;
+        line-height: 1.7;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE GALERI
+   SMP PASUNDAN LELES
+================================================== */
+
+/* DESKTOP */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+
+/* CARD */
+.gallery-card {
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* GAMBAR */
+.gallery-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ISI CARD */
+.gallery-content {
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.gallery-content h3 {
+    margin: 15px 0 12px;
+    font-size: 22px;
+    line-height: 1.35;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.gallery-content p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.gallery-category {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+}
+
+
+/* ==================================================
+   HP
+================================================== */
+
+@media (max-width: 768px) {
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        width: 100%;
+    }
+
+    .gallery-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 210px;
+    }
+
+    .gallery-content {
+        padding: 20px;
+    }
+
+    .gallery-content h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .gallery-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* ==================================================
+   HP KECIL
+================================================== */
+
+@media (max-width: 480px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+
+    .gallery-content {
+        padding: 18px;
+    }
+
+    .gallery-content h3 {
+        font-size: 19px;
+    }
+
+    .gallery-content p {
+        font-size: 14px;
+    }
+
+}
