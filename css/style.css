@@ -6463,3 +6463,333 @@ body{
     }
 
 }
+
+/* ==================================================
+   GURU - RESPONSIVE MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* =========================================
+       HALAMAN GURU
+       2 FOTO KE SAMPING
+    ========================================= */
+
+    .teacher-page .teacher-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .teacher-page .teacher-card {
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .teacher-page .teacher-image {
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .teacher-page .teacher-image img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .teacher-page .teacher-info {
+        padding: 15px 10px;
+    }
+
+    .teacher-page .teacher-info h3 {
+        font-size: 15px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+
+    .teacher-page .teacher-info h4 {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+
+    .teacher-page .teacher-info p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================================
+       GURU DI HALAMAN UTAMA / INDEX
+       2 FOTO KE SAMPING
+    ========================================= */
+
+    .teacher-preview .teacher-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .teacher-preview .teacher-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .teacher-preview .teacher-info {
+        padding: 15px 10px;
+    }
+
+    .teacher-preview .teacher-info h3 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .teacher-preview .teacher-info h4 {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+}
+
+/* ==================================================
+   RESPONSIVE KARTU GURU
+   DESKTOP 4 KOLOM
+   MOBILE 2 KOLOM
+================================================== */
+
+/* DESKTOP */
+.teacher-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.teacher-card {
+    width: 100%;
+}
+
+/* FOTO DESKTOP */
+.teacher-card > img {
+    width: 100%;
+    height: 330px;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .teacher-card > img {
+        height: 280px;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .teacher-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
+
+    .teacher-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .teacher-card > img {
+        width: 100% !important;
+        height: 180px !important;
+        object-fit: cover !important;
+        display: block;
+    }
+
+    .teacher-info {
+        padding: 12px 8px !important;
+    }
+
+    .teacher-info h3 {
+        font-size: 15px !important;
+        line-height: 1.3;
+        margin-bottom: 5px;
+    }
+
+    .teacher-info span {
+        font-size: 11px !important;
+        line-height: 1.4;
+    }
+
+    .teacher-info p {
+        font-size: 11px !important;
+        margin-top: 4px;
+    }
+
+}
+
+
+/* ==================================================
+   HP KECIL
+================================================== */
+
+@media (max-width: 480px) {
+
+    .teacher-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+    }
+
+    .teacher-card > img {
+        height: 145px !important;
+    }
+
+    .teacher-info {
+        padding: 10px 5px !important;
+    }
+
+    .teacher-info h3 {
+        font-size: 13px !important;
+    }
+
+    .teacher-info span {
+        font-size: 10px !important;
+    }
+
+    .teacher-info p {
+        font-size: 10px !important;
+    }
+
+}
+
+/* ==================================================
+   PREVIEW GURU DI INDEX.HTML
+   KHUSUS HALAMAN UTAMA
+================================================== */
+
+/* DESKTOP */
+.teacher-preview .teacher-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.teacher-preview .teacher-card {
+    width: 100%;
+    min-width: 0;
+}
+
+.teacher-preview .teacher-card > img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: #f5f5f5;
+    display: block;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .teacher-preview .teacher-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .teacher-preview .teacher-card > img {
+        height: 230px;
+        object-fit: contain;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .teacher-preview .teacher-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    .teacher-preview .teacher-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .teacher-preview .teacher-card > img {
+        width: 100% !important;
+        height: 170px !important;
+        object-fit: contain !important;
+        background: #f5f5f5;
+    }
+
+    .teacher-preview .teacher-info {
+        padding: 10px 7px !important;
+    }
+
+    .teacher-preview .teacher-info h3 {
+        font-size: 14px !important;
+        line-height: 1.3;
+    }
+
+    .teacher-preview .teacher-info p {
+        font-size: 10px !important;
+        line-height: 1.4;
+    }
+
+}
+
+
+/* ==================================================
+   HP KECIL
+================================================== */
+
+@media (max-width: 480px) {
+
+    .teacher-preview .teacher-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+    }
+
+    .teacher-preview .teacher-card > img {
+        height: 140px !important;
+    }
+
+    .teacher-preview .teacher-info {
+        padding: 8px 5px !important;
+    }
+
+    .teacher-preview .teacher-info h3 {
+        font-size: 12px !important;
+    }
+
+    .teacher-preview .teacher-info p {
+        font-size: 9px !important;
+    }
+
+}
