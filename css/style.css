@@ -8303,3 +8303,48 @@ body{
     transform: translateY(-5px);
     background: #111 !important;
 }
+
+/* =========================================
+   FOTO PROFIL SEKOLAH
+   AGAR TIDAK TERLALU BESAR
+========================================= */
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 650px;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .profile-image img {
+        max-width: 550px;
+        height: 330px;
+    }
+}
+
+/* HP */
+@media (max-width: 768px) {
+    .profile-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+    }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+    .profile-image img {
+        height: 230px;
+    }
+}
