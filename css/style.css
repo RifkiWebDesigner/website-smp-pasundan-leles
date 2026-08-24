@@ -8348,3 +8348,54 @@ body{
         height: 230px;
     }
 }
+
+/* =========================================
+   STRUKTUR ORGANISASI
+========================================= */
+
+.organization-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+}
+
+.organization-wrapper img {
+    width: 60%;
+    max-width: 750px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 18px;
+}
+
+/* Desktop / Laptop */
+@media (min-width: 992px) {
+    .organization-wrapper img {
+        width: 75%;
+        max-width: 900px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .organization-wrapper img {
+        width: 88%;
+        max-width: 750px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .organization-wrapper {
+        margin-top: 20px;
+    }
+
+    .organization-wrapper img {
+        width: 94%;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+}
